@@ -6,6 +6,8 @@ body {
   font: 14.5px/1.5 Lato, "Helvetica Neue", Helvetica, Arial, sans-serif;
   color:#777;
   font-weight:300;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -151,6 +153,7 @@ header {
 #user-info {
   display: block;
   margin-top: 10px;
+  text-align: center;
 }
 
 #user-info a {
@@ -272,7 +275,6 @@ footer {
 }
 
 #home-title {
-  margin: 45px auto -15px auto;
   font-size: 72px;
   text-align: center;
 }
