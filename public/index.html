@@ -12,6 +12,7 @@
   <link rel="stylesheet" href="./css/pygments-borland.css" />
   <link rel="stylesheet" href="./css/styles.css" />
   <!-- <link href="images/favicon.ico" rel="shortcut icon" /> -->
+
 </head>
 
 <body class="home-page">
@@ -23,7 +24,7 @@
       <div class="container-fluid">
         <div class="row-fluid">
           <div class="span6">
-            <iframe width="100%" height="475" src="https://www.youtube.com/embed/G9_EGubLrxE?autoplay=1" frameborder="0" ></iframe>
+            <iframe width="100%" height="475" src="https://www.youtube.com/embed/s9bnMQ3AR7U?autoplay=1" frameborder="0" ></iframe>
           </div>
           <div class="span6">
             <div id="firechat-container" class="clearfix"></div>
@@ -72,6 +73,7 @@
         authModal = $('#auth-modal').modal({ show: false }),
         chat = new FirechatUI(chatRef, target);
 
+    // firechat
     chat.on('auth-required', function() {
       authModal.modal('show');
       return false;
