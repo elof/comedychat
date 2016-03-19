@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/2.3.1/css/bootstrap-responsive.min.css" />
   <link rel="stylesheet" href="./css/pygments-borland.css" />
   <link rel="stylesheet" href="./css/styles.css" />
-  <!-- <link href="images/favicon.ico" rel="shortcut icon" /> -->
+
 </head>
 
 <body class="home-page">
@@ -22,8 +22,9 @@
     <div class="header-content">
       <div class="container-fluid">
         <div class="row-fluid">
-          <div class="span6" style="padding-bottom:10px;">
-            <iframe width="100%" height="475" src="https://www.youtube.com/embed/G9_EGubLrxE" frameborder="0" allowfullscreen></iframe>
+
+          <div class="span6">
+            <iframe width="100%" height="475" src="https://www.youtube.com/embed/s9bnMQ3AR7U?autoplay=1" frameborder="0" ></iframe>
           </div>
           <div class="span6">
             <div id="firechat-container" class="clearfix"></div>
@@ -35,8 +36,13 @@
         </div>
     </div>
   </div>
+<<<<<<< HEAD
   <div class="tacos" style="padding-left:30px;">
     A <a href="http://taco.computer">TACO DOT COMPUTER</a> PRODUCTION
+=======
+  <div class="footer" style="color:white padding-left:30px;">
+    A <a target="_blank" href="http://taco.computer">TACO DOT COMPUTER</a> PRODUCTION
+>>>>>>> 7191eb32b28d759ac61050236a98713cee615592
   </div>
   </header>
 
@@ -44,7 +50,7 @@
   <div id="auth-modal" class="modal hide fade" tabindex="-1" role="dialog">
     <div class="modal-header">
       <button type="button" class="close" data-dismiss="modal">×</button>
-      <h4 id="myModalLabel">Authenticate to continue</h4>
+      <h4 id="myModalLabel">Sign in to join the conversation!</h4>
     </div>
     <div class="modal-body text-center">
       <p>
@@ -72,6 +78,7 @@
         authModal = $('#auth-modal').modal({ show: false }),
         chat = new FirechatUI(chatRef, target);
 
+    // firechat
     chat.on('auth-required', function() {
       authModal.modal('show');
       return false;
@@ -86,11 +93,11 @@
         $('#user-name').text(username);
         $('#user-info').show();
         setTimeout(function() {
-          chat._chat.enterRoom('-Iy1N3xs4kN8iALHV0QA')
+          chat._chat.enterRoom('-K1RWHYZG5rJCN7GTqKj')
         }, 500);
       } else {
         $('#user-info').hide();
-        chat._chat.enterRoom('-Iy1N3xs4kN8iALHV0QA')
+        chat._chat.enterRoom('-K1RWHYZG5rJCN7GTqKj')
       }
     });
 
